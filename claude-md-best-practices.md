@@ -1,20 +1,20 @@
 # CLAUDE.md Best Practices
 
 ## Core Philosophy
-- Treat CLAUDE.md like a Skill — apply all Skill authoring best practices to it
-- It level-sets the agent on your product so it "speaks the same language" — that's the real 10x
-- Not a memory dump — architectural grounding for every session
-- CLAUDE.md is injected into context on EVERY interaction — every token here costs you reasoning space
+- Treat CLAUDE.md like a Skill - apply all Skill authoring best practices to it
+- It level-sets the agent on your product so it "speaks the same language" - that's the real 10x
+- Not a memory dump - architectural grounding for every session
+- CLAUDE.md is injected into context on EVERY interaction - every token here costs you reasoning space
 
 ## Keep It Short (50–150 lines max)
 - A 50-line file with clear architectural intent beats a 1,000-line file of "don't do X" patches
 - Negations ("don't use X", "never do Y") dilute important directives and hurt performance
-- The model has to parse through hundreds of negations — important directives get diluted
+- The model has to parse through hundreds of negations - important directives get diluted
 - Rule of thumb: over 150 lines → rewrite from scratch
 - A/B tested: short + intentional >> long + patchy
 
 ## Rewrite Periodically
-- CLAUDE.md has a "half life" — degrades over time as patches accumulate
+- CLAUDE.md has a "half life" - degrades over time as patches accumulate
 - Recommended cadence: rewrite every ~2 weeks
 - Start fresh, capture only current architectural intent
 - Move outdated "don't do X" patches to Skills or delete them entirely
@@ -43,10 +43,10 @@
 > "For every non-trivial code change, write a spec file first (FEATURE_xyz.md). Include impact on database structure. Update SCHEMA.md when needed."
 
 ## Global vs Project CLAUDE.md
-- `~/.claude/CLAUDE.md` — universal rules true for every project (Exa policy, bug-fix rule, ask-vs-act)
-- `your-project/CLAUDE.md` — project-specific architecture, lazy-loads /documents/
-- Skills in `~/.claude/skills/` — portable across all projects
-- Skills in `.claude/skills/` — only for that project
+- `~/.claude/CLAUDE.md` - universal rules true for every project (Exa policy, bug-fix rule, ask-vs-act)
+- `your-project/CLAUDE.md` - project-specific architecture, lazy-loads /documents/
+- Skills in `~/.claude/skills/` - portable across all projects
+- Skills in `.claude/skills/` - only for that project
 
 ## Per-Folder Instructions
 - Create `discussion/` and `decisions/` subfolders per topic

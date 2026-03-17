@@ -2,6 +2,9 @@
 
 A living knowledge base of best practices for working with Claude, Claude Code, skills, MCP tools, and agentic workflows that I PERSONALLY collected from practitioners, researchers and the community.
 
+This is different from ecosystem trackers or reference indexes. Everything here is 
+there  for people who are learning, not people who already know the landscape.
+
 ---
 
 ## What This Is
