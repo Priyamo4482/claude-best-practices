@@ -141,3 +141,4 @@ Add each server as a new block inside `mcpServers`. Restart Claude Code after an
 - Connect Gemini + Codex as local review tools alongside Claude
 - Push to GitHub early → Cursor Bug Bot reviews
 - Fresh Claude context = better review (no bias toward its own code)
+
