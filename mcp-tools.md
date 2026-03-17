@@ -1,15 +1,15 @@
-# MCP Tools — Servers, Setup, and When to Use Them
+# MCP Tools - Servers, Setup, and When to Use Them
 
-## Skills vs MCP — The Core Distinction
+## Skills vs MCP - The Core Distinction
 - **MCP** = connectivity. Secure, standardized access to external systems
 - **Skills** = expertise. Domain knowledge and workflow logic on top of those connections
-- MCP without skills: Claude has access but lacks procedural clarity → inconsistent output
+- MCP without skills: Claude has access but lacks procedural clarity -> inconsistent output
 - Skills without MCP: Claude has instructions but no live data or tools
 - One skill can orchestrate multiple MCP servers. One MCP server can support dozens of skills.
 
 Analogy: MCP is the kitchen (tools, ingredients). Skills are the recipes (what to do with them).
 
-MCP is client-agnostic — configure a server once, it works in Claude Code, Cursor, Windsurf, VS Code, all of them.
+MCP is client-agnostic - configure a server once, it works in Claude Code, Cursor, Windsurf, VS Code, all of them.
 
 ---
 
@@ -24,7 +24,7 @@ Every MCP you keep should kill a specific friction point. Start with 1-2, get co
 ---
 
 ## The Config File
-All MCP servers go in one place. In Claude Code: Settings → Developer → Edit Config. It opens a JSON file:
+All MCP servers go in one place. In Claude Code: Settings -> Developer -> Edit Config. It opens a JSON file:
 
 ```json
 {
@@ -59,7 +59,7 @@ Add each server as a new block inside `mcpServers`. Restart Claude Code after an
 
 **Context7**
 - Injects up-to-date, version-specific docs and real code examples into context
-- Kills hallucinated APIs — Claude uses accurate library info instead of stale training data
+- Kills hallucinated APIs - Claude uses accurate library info instead of stale training data
 - Essential when working with any rapidly evolving framework or SDK
 
 ```json
@@ -69,10 +69,10 @@ Add each server as a new block inside `mcpServers`. Restart Claude Code after an
 }
 ```
 
-### 💻 Code & Version Control
+###  Code & Version Control
 **GitHub MCP** ← most universally useful after Exa
 - Claude gets direct access to your repos
-- Read issues, review PRs, search across repos, automate workflows — without leaving terminal
+- Read issues, review PRs, search across repos, automate workflows - without leaving terminal
 - Supports read-only lockdown mode to prevent accidental changes to production
 
 **Sentry MCP**
@@ -80,9 +80,9 @@ Add each server as a new block inside `mcpServers`. Restart Claude Code after an
 - Fetches full stack traces and breadcrumbs directly into context
 - Remote hosted at `https://mcp.sentry.dev/mcp` (OAuth auth)
 
-### �-�️ Databases
+###  Databases
 **PostgreSQL MCP**
-- Natural language queries — no switching to a SQL client
+- Natural language queries - no switching to a SQL client
 - Claude explores table structure, understands relationships, runs queries
 - Use read-only mode for anything near production
 
@@ -90,29 +90,29 @@ Add each server as a new block inside `mcpServers`. Restart Claude Code after an
 - Combines Postgres, auth, and storage in one
 - Best for full-stack developers building modern backend apps
 
-### 🧠 Memory
+###  Memory
 **Memory MCP** ← most underrated category
-- Claude goes from "tool I explain things to every session" → "collaborator who knows my projects"
-- Changes the whole relationship — context carries over sessions
+- Claude goes from "tool I explain things to every session" -> "collaborator who knows my projects"
+- Changes the whole relationship - context carries over sessions
 - Makes every other MCP more powerful
 
-### 🎨 Design
+###  Design
 **Figma MCP**
 - Extract design specs, access component libraries, sync design tokens
-- Ask: "convert this Figma layout to React components" → production-ready code
+- Ask: "convert this Figma layout to React components" -> production-ready code
 - Install: `npx @composio/mcp@latest setup figma --client claude`
 
-### 📊 Product & Analytics
+###  Product & Analytics
 **PostHog MCP**
 - Access feature flags, user funnels, A/B test results inside Claude Code
 - Make code decisions based on actual user behavior, not assumptions
 
-### 🔧 Project Management
+###  Project Management
 **Atlassian MCP (Jira + Confluence)**
 - Search tickets, update statuses, create tickets from PR descriptions or bug reports
-- Pull Confluence docs alongside your code — no more IDE/Jira context switching
+- Pull Confluence docs alongside your code - no more IDE/Jira context switching
 
-### ⚡ Automation
+###  Automation
 **Zapier MCP**
 - Connect Claude to any app Zapier supports (Slack, Gmail, Trello, etc.)
 - Trigger cross-app workflows from inside Claude Code
@@ -120,7 +120,7 @@ Add each server as a new block inside `mcpServers`. Restart Claude Code after an
 ---
 
 ## Specialist Agents (not MCP, but related)
-**Agency Agents** — 61 specialized sub-agents
+**Agency Agents** - 61 specialized sub-agents
 - Engineering, design, marketing, product, testing, and more
 - Each has unique personality, workflows, real deliverables
 - Install: drop into `~/.claude/agents/`
@@ -130,15 +130,15 @@ Add each server as a new block inside `mcpServers`. Restart Claude Code after an
 ---
 
 ## Claude Code Plugins Worth Installing
-- `mksglu/claude-context-mode` — bigger context window via reference loading
-- `claude-warden` — protection against destructive actions
-- `arscontexta` — builds skill graphs (249-file knowledge system)
+- `mksglu/claude-context-mode` - bigger context window via reference loading
+- `claude-warden` - protection against destructive actions
+- `arscontexta` - builds skill graphs (249-file knowledge system)
 
 ---
 
 ## Multi-LLM Code Review Pattern
-- Only ~1/3 of issues overlap across different LLMs — use multiple for broader coverage
+- Only ~1/3 of issues overlap across different LLMs - use multiple for broader coverage
 - Connect Gemini + Codex as local review tools alongside Claude
-- Push to GitHub early → Cursor Bug Bot reviews
+- Push to GitHub early -> Cursor Bug Bot reviews
 - Fresh Claude context = better review (no bias toward its own code)
 
