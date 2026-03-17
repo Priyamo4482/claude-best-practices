@@ -80,7 +80,7 @@ Add each server as a new block inside `mcpServers`. Restart Claude Code after an
 - Fetches full stack traces and breadcrumbs directly into context
 - Remote hosted at `https://mcp.sentry.dev/mcp` (OAuth auth)
 
-### 🗄️ Databases
+### �-�️ Databases
 **PostgreSQL MCP**
 - Natural language queries — no switching to a SQL client
 - Claude explores table structure, understands relationships, runs queries
