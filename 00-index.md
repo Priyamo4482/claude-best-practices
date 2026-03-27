@@ -44,6 +44,10 @@ A decision guide: what to read and when. Start here every session.
 -> `mcp-tools.md` -> Skills vs MCP section
 -> `agentic-workflow-best-practices.md` -> When to Use What section
 
+## Claude keeps re-learning my architecture every session / making structural mistakes
+-> `claude-md-best-practices.md` -> State + Architecture Files section
+-> Add `architecture.md` + `state.md` to `/documents/` and lazy-load from CLAUDE.md
+
 ## I want to learn agent building from scratch
 -> `learning-resources.md` - books, papers, videos, courses, newsletters
 
@@ -52,7 +56,7 @@ A decision guide: what to read and when. Start here every session.
 ## File Map
 | File | What's Inside |
 |------|--------------|
-| `claude-md-best-practices.md` | Line limits, lazy loading, rewrite cadence, sub-file pattern |
+| `claude-md-best-practices.md` | Line limits, lazy loading, state+architecture files, rewrite cadence, sub-file pattern |
 | `agentic-workflow-best-practices.md` | AGENTS.md config, planning mode, parallel agents, spec-first, bug handling, multi-LLM review |
 | `skills-best-practices.md` | Skill authoring, building from projects, skill-creator workflow |
 | `anthropic-skills-guide.md` | Official 33-page guide distilled: YAML frontmatter, trigger descriptions, design patterns, progressive disclosure |
