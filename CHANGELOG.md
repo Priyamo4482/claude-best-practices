@@ -19,5 +19,6 @@
 \- Added Exa MCP and GitHub MCP setup guides
 
 - `<important if>` conditional attention pattern to claude-md-best-practices.md
-- Security audit parallel agent pattern to agentic-workflow-best-practices.md  
+- Security audit parallel agent pattern to agentic-workflow-best-practices.md
 - Autoresearch practical implementation notes to skills-best-practices.md (Self-Improving Skills section)
+- State + Architecture Files performance pattern: `architecture.md` and `state.md` as lazy-loaded sub-files; added to claude-md-best-practices.md, project-docs-structure.md Core Files + config tree, and 00-index.md

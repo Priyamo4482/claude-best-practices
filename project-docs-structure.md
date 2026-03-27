@@ -28,6 +28,16 @@ Every project should have a `/documents/` folder. Claude Code can generate most 
 - Gives exploratory runs direction
 - Prevents Claude from going off-piste during open-ended tasks
 
+**architecture.md**
+- Key design decisions, patterns in use, major module boundaries, known constraints
+- Lazy-loaded when Claude is touching cross-cutting concerns or proposing structural changes
+- Prevents Claude from re-inventing or contradicting architectural decisions already made
+
+**state.md**
+- Current WIP, recent migrations, known tech debt, pending decisions — date-stamped
+- Updated after each significant session (< 30 lines; goes stale fast)
+- Acts as a ship's log: what changed, what's broken, what's next
+
 **data-reference.md**
 - Explains connections between domain data not captured in models
 
@@ -82,6 +92,8 @@ your-project/
     styleguide.md
     ICPs.md
     roadmap.md
+    architecture.md
+    state.md
   .claude/
     skills/                   <- project-specific skills only
 ```

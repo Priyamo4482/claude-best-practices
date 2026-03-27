@@ -26,6 +26,14 @@
 - Claude only loads sub-files when actually needed → saves context
 - Example sub-files: `API.md`, `PAYMENTS.md`, `AUTH.md`, `SCHEMA.md`
 
+## State + Architecture Files
+- Add `architecture.md` and `state.md` as lazy-loaded sub-files for medium-to-large codebases
+- **architecture.md**: key design decisions, patterns in use, constraints, major module boundaries — loaded when touching cross-cutting concerns
+- **state.md**: current work-in-progress, recent migrations, known tech debt, pending decisions — updated after each significant session
+- Pattern in CLAUDE.md: `"Read architecture.md before proposing structural changes. Read state.md at the start of any session that touches the data layer."`
+- These two files dramatically cut wrong-assumption errors without bloating CLAUDE.md itself
+- Keep `state.md` short (< 30 lines) and date-stamped — it goes stale fast; treat it like a ship's log
+
 ## What to Reference from CLAUDE.md
 - Link to all `/documents/*.md` files (platform-docs, styleguide, ICPs, roadmap, data-reference)
 - Force code to be compliant with those docs
